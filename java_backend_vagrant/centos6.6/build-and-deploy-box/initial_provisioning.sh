@@ -29,7 +29,7 @@ source ${HOMEDIR}/.sdkman/bin/sdkman-init.sh
 printf "# make sdkman non-interactive, great for CI environments
 sdkman_auto_answer=true
 # do not perform automatic selfupdates
-sdkman_auto_selfupdate=false" > ${HOMEDIR}/.sdkman/etc/config
+echo "sdkman_auto_selfupdate=false" > ${HOMEDIR}/.sdkman/etc/config
 
 # use grails 2.3.7
 sdk install grails 2.3.7
